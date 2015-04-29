@@ -31,7 +31,7 @@ the popup element to handle the basic popup behaviour. quick-popup toggles the
 
 The `.popup-close` class can be added to any span element inside a `.popup`
 element to create a close button. The `.popup-close` element is given a
-`::before` pseudo-element which contains an `&times;`.
+`::before` pseudo-element which contains '&times;' (`&times;`).
 
 You can also use `.popup.window` to make the popup grey out the document and
 cover the most of the viewport.
