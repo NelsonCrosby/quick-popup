@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="../popup.css"/>
+        <style>.popup { border: 1px solid black; }</style>
+    </head>
+    <body>
+        <div id="test1">
+            <a>Show 1</a>
+            <div class="popup">
+                <span class="popup-close"></span>
+                <h2>Hello, World 1!</h2>
+            </div>
+        </div>
+        <div id="test2">
+            <a data-popup-for="test2">Show 2</a>
+            <div data-popup-name="test2" class="popup">
+                <span class="popup-close"></span>
+                <h2>Hello, World 2!</h2>
+            </div>
+        </div>
+        <div id="test3">
+            <a data-popup-for="test3">Show Window</a>
+            <div class="popup window" data-popup-name="test3">
+                <span class="popup-close"></span>
+                <h2>Hello, window World!</h2>
+                <p>This should display in a window</p>
+            </div>
+        </div>
+
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../popup.min.js"></script>
+        <script>
+            $('#test1 a').popup('#test1 div');
+        </script>
+    </body>
+</html>

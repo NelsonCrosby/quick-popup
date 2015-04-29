@@ -1,0 +1,26 @@
+{
+  "name": "quick-popup",
+  "version": "0.0.0",
+  "authors": [
+    "Nelson Crosby <ncrosby@sourcecomb.com>"
+  ],
+  "description": "A super-simple popup system",
+  "main": "popup.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "popup"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
