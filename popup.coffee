@@ -33,6 +33,6 @@ $(document).ready () ->
   $('[data-popup-for]').each () ->
     trigger = $(this)
     # Selector for the targets (`data-popup-name="..."`)
-    target = "[data-popup-name='#{trigger.attr 'data-popup-for'}'"
+    target = "[data-popup-name='#{trigger.attr 'data-popup-for'}']"
     # Run $().popup
     trigger.popup target
